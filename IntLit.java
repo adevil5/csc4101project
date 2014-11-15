@@ -20,4 +20,19 @@ class IntLit extends Node {
     public int getIntVal() {
         return intVal;
     }
+    
+    @Override
+    public Node eval(Node p, Environment env){
+        return this;
+    }
+    
+    @Override
+    Node eval(Environment env){
+        return this;
+    }
+    
+    @Override
+    public Node apply(Node args){
+        return this;
+    }
 }

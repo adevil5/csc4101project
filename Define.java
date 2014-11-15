@@ -24,6 +24,6 @@ class Define extends Special {
 	env.define(id.getCar(), func);
     }
 
-    return new StrLit("No values returned\n");
+    return new StrLit("No values returned.");
 }
 }

@@ -92,5 +92,11 @@ class Cons extends Node {
     public boolean isPair() {
         return true;
     }
+    
+    @Override
+    public Node eval(Environment env)
+    {
+        return form.eval(this,env);
+    }
 
 }

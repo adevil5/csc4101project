@@ -102,7 +102,6 @@ public class Main {
         id = new Ident("interaction-environment");
         builtin_env.define(id, new BuiltIn(id));
         Environment env = new Environment(builtin_env);
-        BuiltIn x = new BuiltIn(env); //interaction_environment
 
         // Parse and pretty-print each input expression
         root = parser.parseExp();
