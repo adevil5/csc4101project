@@ -52,7 +52,6 @@ class Closure extends Node {
         //ie (lambda (foo x) (...))
         Node params = fun.getCdr().getCar().getCdr(); //cdadr(fun);
         Node body = fun.getCdr().getCdr(); //cddr(fun);
-        Environment funEnv = new Environment(env);
         //define params
             //traverse args (value) and params (variable names) at the same time and define
         while((args != null) && !args.getCar().isNull()){
