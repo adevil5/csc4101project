@@ -20,7 +20,8 @@ class Define extends Special {
 	env.define(id, val);
     }
     else { //defining a function
-	Closure func = new Closure(new Cons(p.getCdr().getCar().getCdr(), p.getCdr().getCdr()), env);
+
+	Closure func = new Closure(new Cons(p.getCdr().getCar(), p.getCdr()), env);
 	env.define(id.getCar(), func);
     }
 
